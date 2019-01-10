@@ -10,10 +10,10 @@ jobs:
       - checkout
       - run:
           name: Build
-          command: dotnet build ./ArkEcosystem.Crypto
+          command: dotnet build ./PhantomChain.Crypto
       - run:
           name: Unit Tests
-          command: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover ./ArkEcosystem.Crypto.Tests
+          command: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover ./PhantomChain.Crypto.Tests
       - run:
           name: Codecov
           when: on_success
